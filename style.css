@@ -1,0 +1,121 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 30%;
+    text-align: center;
+    border: 1px solid black transparent;
+    border-radius: 10px;
+    position: absolute;
+    top: 35%;
+    left:45%;
+    min-width: 30vh;
+    max-width: 50vh;
+    /*min-height: 30vh;*/
+    max-height: 50vh;
+    background: rgb(51, 47, 47);
+    color: white;
+}
+#height, #weight
+{
+    width:fit-content;
+    height: fit-content;
+    margin: 5px;
+    align-self: center;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px;
+}
+#height :focus
+{
+    text-align: center;
+}
+button
+{
+    align-self: center;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+#result
+{
+    margin-top: 10px;
+}
+#condition
+{
+    font-weight: bold;
+    margin-top: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (min-width:320px) and (max-width:374px)
+{
+    .container
+    {
+        top:35%;
+        left:20%;
+    }
+}
+
+@media (min-width:375px) and (max-width:424px)
+{
+    .container
+    {
+        top:30%;
+        left:25%;
+    }
+}
+
+@media (min-width:425px) and (max-width:767px)
+{
+    .container
+    {
+        top:35%;
+        left:30%;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px)
+{
+    .container
+    {
+        top:35%;
+        left:40%;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1440px)
+{
+    .container
+    {
+        top:40%;
+        left:40%;
+    }
+}
